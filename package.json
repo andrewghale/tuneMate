@@ -1,0 +1,30 @@
+{
+  "name": "tunemate",
+  "version": "1.0.0",
+  "description": "This a project for practicing PHP. It's going to be some sort of media library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewghale/tuneMate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewghale/tuneMate/issues"
+  },
+  "homepage": "https://github.com/andrewghale/tuneMate#readme",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}

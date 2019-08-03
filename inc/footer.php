@@ -5,5 +5,6 @@
             <p>&copy;<?php echo date("Y"); ?> tuneMate</p>
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
