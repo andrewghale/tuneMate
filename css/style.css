@@ -84,3 +84,7 @@ li {
 .footer wrapper {
     display: flex;
 }
+
+.on {
+    background-color: aquamarine;
+}

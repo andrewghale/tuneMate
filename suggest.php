@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Suggest a Tune";
+$section = "suggest";
 
 include("inc/header.php"); ?>
 
