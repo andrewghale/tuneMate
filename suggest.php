@@ -1,4 +1,7 @@
-<?php include("inc/header.php"); ?>
+<?php
+$pageTitle = "Suggest a Tune";
+
+include("inc/header.php"); ?>
 
 <div class="section page">
     <h1>Suggest</h1>
