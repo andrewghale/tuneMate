@@ -322,13 +322,12 @@ a {
   a:visited {
     color: #6ec5bf; }
 
+ul {
+  padding-inline-start: 0px; }
+
 .wrapper {
   width: 980px;
   margin: 0 auto; }
-
-#content {
-  min-height: 400px;
-  background: #0a0a0a; }
 
 .header {
   display: flex;
@@ -366,6 +365,7 @@ a {
 .footer {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   background: black;
   border-top: 1px solid #3d3d3d;
   height: 100px;
@@ -425,43 +425,17 @@ a {
   width: 460px;
   float: right; }
 
-.section {
-  flex: 1 0 auto; }
-
-.section.page h1 {
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1.6;
-  font-weight: normal; }
-
-.section.page .media-details h1 {
-  text-align: left; }
-
-.section.page p {
-  width: 475px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.section.page .media-details h1 .price {
-  color: #9d9f4e;
-  padding-right: 10px;
-  font-size: 34px; }
-
-.section.catalog h2 {
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.6;
-  font-weight: normal; }
-
-.section.catalog ul.items {
-  margin: 0 0 -17px 0;
-  padding: 0;
-  width: 997px; }
-  .section.catalog ul.items li {
+ul.items {
+  display: flex;
+  flex-wrap: wrap; }
+  ul.items li {
+    display: flex;
+    align-content: center;
+    min-height: 300px;
+    border: 1px solid #3d3d3d;
     position: relative;
-    display: inline-block;
     margin: 1rem; }
-    .section.catalog ul.items li a:hover:after {
+    ul.items li a:hover:after {
       content: '+';
       font-size: 3rem;
       position: absolute;
@@ -470,25 +444,22 @@ a {
       color: #6ec5bf;
       text-shadow: 2px 2px 15px #6ec5bf; }
 
-.section.catalog ul.items li a {
-  display: block;
-  background: #3d3d3d;
-  padding: 1rem;
-  border-radius: 3px;
-  text-decoration: none; }
-
-.section.catalog ul.items li a:hover {
-  opacity: 1;
-  color: #666; }
-
-.section.catalog ul.items li img {
-  width: 190px;
-  border: 6px solid #f0eeed; }
-
-.section.catalog ul.items li p {
+.catalog ul.items li p {
   margin-left: 0;
   margin-right: 0;
   width: auto; }
+
+.catalog ul.items li img {
+  width: 190px; }
+
+.catalog ul.items li a {
+  display: block;
+  background: #3d3d3d;
+  padding: 1rem;
+  text-decoration: none; }
+  .catalog ul.items li a:hover {
+    opacity: 1;
+    color: #666; }
 
 .media-details form {
   margin-left: 0; }
@@ -570,5 +541,10 @@ form input[type="submit"]:hover {
   font-size: 14px;
   font-style: italic;
   font-weight: bold; }
+
+#content {
+  min-height: 400px;
+  background: #0a0a0a;
+  flex: 1 0 auto; }
 
 /*# sourceMappingURL=app.css.map */

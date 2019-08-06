@@ -1,31 +1,13 @@
-.section {
-    flex: 1 0 auto;
-}
-
-.section.page h1 {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.6;
-    font-weight: normal;
-}
-.section.page .media-details h1 {
-    text-align: left;
-}
-.section.page p {width: 475px; margin-left: auto; margin-right: auto; }
-.section.page .media-details h1 .price {color: #9d9f4e; padding-right: 10px; font-size: 34px;}
-.section.catalog h2 {
-    font-size: 24px;
-    text-align: center;
-    line-height: 1.6;
-    font-weight: normal;
-}
-.section.catalog ul.items {
-    margin: 0 0 -17px 0;
-    padding: 0;
-    width: 997px;
+ul.items {
+    display: flex;
+    flex-wrap: wrap;
     li {
+        display: flex;
+        align-content: center;
+        min-height: 300px;
+        border: 1px solid $gray;
+        // border-radius: $border-radius;
         position: relative;
-        display: inline-block;
         margin: 1rem;
         a:hover:after {
             content: '+';
@@ -39,28 +21,27 @@
     }
 }
 
-.section.catalog ul.items li a {
-    display: block;
-    background: $item-bg;
-    padding: 1rem;
-    border-radius: $border-radius;
-    text-decoration: none;
+.catalog ul.items li {
+    p {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    img {
+        width: 190px;
+    }
+    a {
+        display: block;
+        background: $item-bg;
+        padding: 1rem;
+        // border-radius: $border-radius;
+        text-decoration: none;
+        &:hover {
+            opacity: 1;
+            color: #666;
+        }
+    }
 }
-
-.section.catalog ul.items li a:hover {
-    opacity: 1;
-    color: #666;
-}
-.section.catalog ul.items li img {
-    width: 190px;
-    border: 6px solid #f0eeed;
-}
-.section.catalog ul.items li p {
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
-}
-
 
 .media-details form {
     margin-left: 0;
@@ -156,4 +137,10 @@ form input[type="submit"]:hover {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
+}
+
+#content {
+    min-height: 400px;
+    background: $light-black;
+    flex: 1 0 auto;
 }

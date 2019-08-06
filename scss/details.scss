@@ -2,7 +2,6 @@
     float: left;
     text-align: center;
     border: 1px solid $gray;
-    // padding: 4px;
     background: $gray;
     span {
         background: $gray;
@@ -18,4 +17,8 @@
 .media-details {
     width: 460px;
     float: right;
+}
+
+.card {
+
 }

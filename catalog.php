@@ -20,7 +20,7 @@ if (isset($_GET["cat"])) {
 
 include("inc/header.php"); ?>
 
-<div class="section catalog page">
+<div class="catalog">
 
     <div class="wrapper">
         <h1>

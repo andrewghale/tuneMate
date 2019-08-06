@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     background: $black;
     border-top: 1px solid $gray;
     height: 100px;
