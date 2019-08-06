@@ -10,9 +10,11 @@
 <body>
     <div class="header">
         <a href="index.php">
-            <div class="logo-wrapper"></div>
+            <!-- <div class="logo-wrapper"></div> -->
+            <img src="img/tunemate.png" alt="logo"/>
         </a>
         <ul class="nav">
+            <!-- the " on" class highlights current page section -->
             <li class="books<?php if ($section == "books") { echo " on"; } ?>"><a href="catalog.php?cat=books">Books</a></li>
             <li class="movies<?php if ($section == "movies") { echo " on"; } ?>"><a href="catalog.php?cat=movies">Movies</a></li>
             <li class="music<?php if ($section == "music") { echo " on"; } ?>"><a href="catalog.php?cat=music">Music</a></li>

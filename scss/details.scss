@@ -1,0 +1,21 @@
+.media-picture {
+    float: left;
+    text-align: center;
+    border: 1px solid $gray;
+    // padding: 4px;
+    background: $gray;
+    span {
+        background: $gray;
+        display: block;
+        width: fit-content;
+        padding: 1rem;
+    }
+    img {
+        width: 292px;
+    }
+}
+
+.media-details {
+    width: 460px;
+    float: right;
+}

@@ -1,0 +1,50 @@
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#content {
+    min-height: 400px;
+    background: $light-black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: $black;
+    border-bottom: 1px solid $gray;
+    padding: 1rem 200px;
+    a {
+        img {
+            height: 100px;
+            width: auto;
+        }
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        li {
+            margin: 0;
+            font-size: 1.4rem;
+            text-align: center;
+            list-style: none;
+            letter-spacing: 0.1rem;
+            a {
+                color: $dark-white;
+                text-decoration: none;
+                display: block;
+                width: 100px;
+                padding: 0.5rem 0.5rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.header .nav li.on a {
+    background-color: $gray;
+    border-radius: $border-radius;
+}
+.header .nav li a:hover, .header .nav li a:active {
+    opacity: 0.7;
+}

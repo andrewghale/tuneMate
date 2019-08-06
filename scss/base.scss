@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family;
+    font-size: 16px;
+    background:$light-black;
+    color: #676767;
+}
+
+a {
+    color: $dark-white;
+    &:visited {
+        color: $turquoise;
+    }
+}
