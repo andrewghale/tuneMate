@@ -1,10 +1,10 @@
 #wrapper {
-    width: 1000px;
+    width: 1200px;
     min-height: 400px;
     background: $light-black;
     flex: 1 0 auto;
     margin: 0 auto;
-    border: 1px solid mistyrose;
+    // border: 1px solid $dark-white;
 }
 
 .items {
@@ -138,4 +138,11 @@ form input[type="submit"]:hover {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
+}
+
+
+.mouth,
+.eye {
+    opacity: 0;
+    animation: mouth-smile 0.5s ease-in-out 0s 1 forwards;
 }

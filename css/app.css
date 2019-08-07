@@ -303,6 +303,14 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes mouth-smile {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 html {
   height: 100%;
   overflow-y: scroll;
@@ -317,82 +325,80 @@ body {
   background: #0a0a0a;
   color: #676767; }
 
+h1 {
+  font-size: 3rem;
+  color: #6ec5bf;
+  letter-spacing: 0.2rem; }
+
 a {
+  text-decoration: none;
   color: #dddddd; }
   a:visited {
     color: #6ec5bf; }
+  a:hover, a:active {
+    text-decoration: none;
+    opacity: 0.7; }
 
 ul {
   padding-inline-start: 0px; }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+.header-wrapper {
+  width: 100%;
   background: black;
-  border-bottom: 1px solid #3d3d3d;
-  padding: 1rem 200px; }
-  .header a img {
-    height: 100px;
-    width: auto; }
-  .header .nav {
+  height: fit-content; }
+  .header-wrapper .header {
+    max-width: 1200px;
     display: flex;
-    align-items: center; }
-    .header .nav li {
-      margin: 0;
-      font-size: 1.4rem;
-      text-align: center;
-      list-style: none;
-      letter-spacing: 0.1rem; }
-      .header .nav li a {
-        color: #dddddd;
-        text-decoration: none;
-        display: block;
-        width: 100px;
-        padding: 0.5rem 0.5rem;
-        white-space: nowrap; }
-
-.header .nav li.on a {
-  background-color: #3d3d3d;
-  border-radius: 0.3rem; }
-
-.header .nav li a:hover, .header .nav li a:active {
-  opacity: 0.7; }
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 2rem; }
+    .header-wrapper .header a {
+      height: 71px;
+      align-self: center; }
+    .header-wrapper .header .nav {
+      display: flex;
+      align-items: center; }
+      .header-wrapper .header .nav li {
+        display: flex;
+        margin: 0;
+        font-size: 1.1rem;
+        text-align: center;
+        list-style: none;
+        letter-spacing: 0.1rem; }
+        .header-wrapper .header .nav li.on a {
+          background-color: #3d3d3d;
+          border-radius: 0.3rem; }
+        .header-wrapper .header .nav li a {
+          align-items: center;
+          color: #dddddd;
+          text-decoration: none;
+          width: fit-content;
+          height: fit-content;
+          padding: 0.5rem 0.5rem;
+          white-space: nowrap; }
 
 .footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-shrink: 0;
   background: black;
-  border-top: 1px solid #3d3d3d;
   height: 100px;
-  padding: 0rem 200px;
-  font-size: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
   color: #dddddd; }
-  .footer ul {
-    margin: 0;
-    padding: 0; }
-    .footer ul li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: inline-block; }
-      .footer ul li:after {
-        content: " | "; }
-      .footer ul li::last-child:after {
-        content: ""; }
-  .footer p {
-    margin: 0;
-    padding-right: 3px; }
-  .footer a {
-    text-decoration: none;
-    color: #539def;
-    margin: 0 10px; }
-
-.footer li:first-child a {
-  margin-left: 4px; }
-
-.footer a:hover, .footer a:active {
-  text-decoration: underline; }
+  .footer .lastmod {
+    color: gray; }
+  .footer .social {
+    display: flex;
+    align-items: center; }
+    .footer .social img {
+      height: 40px;
+      width: auto;
+      margin: 0 1rem; }
+    .footer .social a {
+      font-size: 1.4rem;
+      color: white; }
 
 .breadcrumbs {
   font-size: 14px;
@@ -443,12 +449,11 @@ ul {
       margin: 0 0 1rem 0; }
 
 #wrapper {
-  width: 1000px;
+  width: 1200px;
   min-height: 400px;
   background: #0a0a0a;
   flex: 1 0 auto;
-  margin: 0 auto;
-  border: 1px solid mistyrose; }
+  margin: 0 auto; }
 
 .items {
   display: flex;
@@ -561,5 +566,10 @@ form input[type="submit"]:hover {
   font-size: 14px;
   font-style: italic;
   font-weight: bold; }
+
+.mouth,
+.eye {
+  opacity: 0;
+  animation: mouth-smile 0.5s ease-in-out 0s 1 forwards; }
 
 /*# sourceMappingURL=app.css.map */

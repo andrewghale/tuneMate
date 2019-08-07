@@ -21,14 +21,14 @@ if (isset($_GET["cat"])) {
 include("inc/header.php"); ?>
 
 <div id="wrapper">
-    <h1>
+    <p>
         <?php
         if ($section != null) {
             // Shows breadcrumbs starting from full catalog
             echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
         } echo $pageTitle;
         ?>
-    </h1>
+    </p>
     <ul class="items">
     <?php
         $categories = array_category($catalog,$section);

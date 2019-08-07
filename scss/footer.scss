@@ -1,43 +1,27 @@
 .footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-shrink: 0;
     background: $black;
-    border-top: 1px solid $gray;
     height: 100px;
-    padding: 0rem 200px;
-    font-size: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
     color: $dark-white;
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: inline-block;
-            &:after {
-                content:" | ";
-            }
-            &::last-child:after {
-                content:"";
-            }
+    .lastmod {
+        color: gray;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        img {
+            height: 40px;
+            width: auto;
+            margin: 0 1rem;
+        }
+        a {
+            font-size: 1.4rem;
+            color: $white;
         }
     }
-    p {
-        margin: 0;
-        padding-right: 3px;
-    }
-    a {
-        text-decoration: none;
-        color: #539def;
-        margin: 0 10px;
-    }
-}
-
-.footer li:first-child a {
-    margin-left: 4px;
-}
-.footer a:hover, .footer a:active {
-    text-decoration: underline;
 }

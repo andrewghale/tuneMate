@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+<defs>
+<path d="M16 71C16 67.8 16 42.2 16 39C7.16 39 0 46.16 0 55C0 63.84 7.16 71 16 71Z" id="a1cVWvN51B"></path>
+<path d="M70 39C70 42.2 70 67.8 70 71C78.84 71 86 63.84 86 55C86 46.16 78.84 39 70 39Z" id="bLT0snHW3"></path>
+<path d="M14 46L14 29" id="ezrozb5QD"></path>
+<path d="M72 46L72 29" id="d2XkPUdiDB"></path>
+<path d="M72 30C72 14.54 59.02 2 43 2C26.98 2 14 14.54 14 30" id="a3KsmeenF"></path>
+<path d="M24 47.5L36 47.5" id="a13JxkpfiH"></path>
+<path d="M50 47.5L62 47.5" id="b5d8BpO2E"></path>
+<path d="M49.45 59.5L47.41 60.88L45.1 61.5L43.22 61.5L41.18 61.5L39.1 60.88L37.17 59.5" id="a2k0Rv44rZ"></path>
+</defs>
+<g>
+    <g>
+        <g>
+            <use xlink:href="#a1cVWvN51B" opacity="1" fill="#4cc8c0" fill-opacity="1"></use>
+            <g>
+                <use xlink:href="#a1cVWvN51B" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use>
+            </g>
+        </g>
+        <g>
+            <use xlink:href="#bLT0snHW3" opacity="1" fill="#4cc8c0" fill-opacity="1"></use>
+        <g>
+            <use xlink:href="#bLT0snHW3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use>
+        </g>
+        </g>
+        <g>
+            <use xlink:href="#ezrozb5QD" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#ezrozb5QD" opacity="1" fill-opacity="0" stroke="#4cc8c0" stroke-width="4" stroke-opacity="1"></use></g></g><g><use xlink:href="#d2XkPUdiDB" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#d2XkPUdiDB" opacity="1" fill-opacity="0" stroke="#4cc8c0" stroke-width="4" stroke-opacity="1"></use></g></g><g><use xlink:href="#a3KsmeenF" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#a3KsmeenF" opacity="1" fill-opacity="0" stroke="#4cc8c0" stroke-width="4" stroke-opacity="1"></use></g></g><g><use xlink:href="#a13JxkpfiH" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#a13JxkpfiH" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="3" stroke-opacity="1"></use></g></g><g><use xlink:href="#b5d8BpO2E" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#b5d8BpO2E" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="3" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#a2k0Rv44rZ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="3" stroke-opacity="1"></use></g></g></g></g></svg>
