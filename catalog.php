@@ -20,27 +20,24 @@ if (isset($_GET["cat"])) {
 
 include("inc/header.php"); ?>
 
-<div class="catalog">
-
-    <div class="wrapper">
-        <h1>
+<div id="wrapper">
+    <h1>
         <?php
         if ($section != null) {
             // Shows breadcrumbs starting from full catalog
             echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
         } echo $pageTitle;
         ?>
-        </h1>
-        <ul class="items">
-        <?php
-            $categories = array_category($catalog,$section);
-            foreach($categories as $id) {
-                // this custom function displays item details
-                echo get_item_html($id,$catalog[$id]);
-            }
-        ?>
-        </ul>
-    </div>
+    </h1>
+    <ul class="items">
+    <?php
+        $categories = array_category($catalog,$section);
+        foreach($categories as $id) {
+            // this custom function displays item details
+            echo get_item_html($id,$catalog[$id]);
+        }
+    ?>
+    </ul>
 </div>
 
 <?php include("inc/footer.php"); ?>

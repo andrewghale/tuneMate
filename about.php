@@ -1,11 +1,11 @@
 <?php
-$pageTitle = "Suggest a Tune";
-$section = "suggest";
+$pageTitle = "About";
+$section = "about";
 
 include("inc/header.php"); ?>
 
 <div id="wrapper">
-    <h1>Suggest</h1>
+    <h1>About</h1>
 </div>
 
 <?php include("inc/footer.php"); ?>

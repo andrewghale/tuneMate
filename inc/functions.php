@@ -6,7 +6,7 @@ function get_item_html($id,$item) {
     "<li><a href='"
     . 'details.php?id='
     . $id
-    . "'><img src='"
+    . "' class='item'><img src='"
     . $item['img']
     . "' alt='"
     . $item['title']
