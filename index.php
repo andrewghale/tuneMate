@@ -9,9 +9,18 @@ $section = null;
 include("inc/header.php"); ?>
 
 <div id="wrapper">
-    <p>Welcome to tuneMate! This is a personal project of mine for practicing
-        PHP, JS and SASS. More projects on my github profile: github.com/andrewghale
-    </p>
+    <div class="intro">
+        <p>
+            Welcome to tuneMate!
+        </p>
+        <p>
+            This is a personal project of mine for practicing
+            PHP, JS and SASS.
+        </p>
+        <p>
+            More projects on my github profile: <a target="_blank" href="https://github.com/andrewghale">github.com/andrewghale</a>
+        </p>
+    </div>
     <h2>Random Suggestions:</h2>
     <ul class="items">
     <?php

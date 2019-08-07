@@ -4,9 +4,21 @@
     background: $light-black;
     flex: 1 0 auto;
     margin: 0 auto;
-    // border: 1px solid $dark-white;
 }
 
+.intro {
+    color: $white;
+    margin: 1rem;
+    border: 2px solid $turquoise;
+    border-radius: $border-radius;
+    font-size: 1.2rem;
+    background: $gray;
+    line-height: 1rem;
+    width: fit-content;
+    p {
+        margin: 1rem 2rem;
+    }
+}
 .items {
     display: flex;
     flex-wrap: wrap;
@@ -28,12 +40,20 @@
             }
             &:hover:after {
                 content: '+';
+                padding: 0.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: $border-radius;
                 font-size: 3rem;
                 position: absolute;
-                top:35px;
-                right:30px;
-                color: $turquoise;
-                text-shadow: 2px 2px 15px $turquoise;
+                height: 28px;
+                width: 25px;
+                top: 23px;
+                right: 22px;
+                color: #6ec5bf;
+                text-shadow: 2px 2px 15px #6ec5bf;
             }
             img {
                 max-width: 180px;

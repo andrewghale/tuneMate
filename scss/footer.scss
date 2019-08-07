@@ -11,17 +11,17 @@
     .lastmod {
         color: gray;
     }
-    .social {
-        display: flex;
-        align-items: center;
-        img {
-            height: 40px;
-            width: auto;
-            margin: 0 1rem;
-        }
-        a {
-            font-size: 1.4rem;
-            color: $white;
+    a {
+        font-size: 1.4rem;
+        color: $white;
+        .social {
+            display: flex;
+            align-items: center;
+            img {
+                height: 40px;
+                width: auto;
+                margin: 0 1rem;
+            }
         }
     }
 }
