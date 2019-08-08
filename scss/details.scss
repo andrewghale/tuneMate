@@ -1,12 +1,19 @@
 .media-wrapper {
     display: flex;
+    align-self: center;
     border: 1px solid $gray;
     border-radius: $border-radius;
     justify-content: space-around;
     padding: 2rem 0;
     box-shadow: 2px 2px 12px $gray;
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 1rem;
+    }
     table {
         color: $dark-white;
+        margin: 0 1rem;
     }
     th, td {
         border: 1px solid $gray;
@@ -24,14 +31,17 @@
         text-align: center;
         border: 1px solid $gray;
         background: $gray;
+        border-radius: $border-radius;
         span {
             background: $gray;
             display: block;
             width: fit-content;
             padding: 1rem;
+            border-radius: $border-radius;
         }
         img {
             width: 292px;
+            border-radius: $border-radius;
         }
     }
     .media-details {
@@ -42,7 +52,7 @@
         h1 {
             font-size: 2rem;
             color: $dark-white;
-            margin: 0 0 1rem 0;
+            margin: 0 1rem 1rem 1rem;
         }
         table {
 

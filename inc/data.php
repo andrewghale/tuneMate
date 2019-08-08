@@ -164,6 +164,78 @@ $catalog[304] = [
     "category" => "Music",
     "artist" => "Holy Other"
 ];
+$catalog[305] = [
+    "title" => "Rival Dealer",
+    "img" => "img/media/rival_dealer.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2013,
+    "category" => "Music",
+    "artist" => "Burial"
+];
+$catalog[306] = [
+    "title" => "Kindred",
+    "img" => "img/media/kindred.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2012,
+    "category" => "Music",
+    "artist" => "Burial"
+];
+$catalog[307] = [
+    "title" => "Street Halo",
+    "img" => "img/media/street_halo.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2011,
+    "category" => "Music",
+    "artist" => "Burial"
+];
+$catalog[308] = [
+    "title" => "Truant/Rough Sleeper",
+    "img" => "img/media/truant_rough_sleeper.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2012,
+    "category" => "Music",
+    "artist" => "Burial"
+];
+$catalog[309] = [
+    "title" => "Tramp",
+    "img" => "img/media/tramp.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2011,
+    "category" => "Music",
+    "artist" => "Volor Flex"
+];
+$catalog[310] = [
+    "title" => "oOoOO",
+    "img" => "img/media/ooooo.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2010,
+    "category" => "Music",
+    "artist" => "oOoOO"
+];
+$catalog[310] = [
+    "title" => "Gold Panda",
+    "img" => "img/media/lucky_shiner.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2010,
+    "category" => "Music",
+    "artist" => "Gold Panda"
+];
+$catalog[311] = [
+    "title" => "Gold Panda",
+    "img" => "img/media/companion.jpg",
+    "genre" => "Electronic",
+    "format" => "CD",
+    "year" => 2010,
+    "category" => "Music",
+    "artist" => "Gold Panda"
+];
 
 ?>
 
