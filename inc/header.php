@@ -20,7 +20,8 @@
                     <path d="M72 30C72 14.536 59.0163 2 43 2C26.9837 2 14 14.536 14 30" stroke="#4CC8C0" stroke-width="4"/>
                     <line class="eye" x1="24" y1="47.5" x2="36" y2="47.5" stroke="white" stroke-width="3" stroke-linejoin="bevel"/>
                     <line class="eye" x1="50" y1="47.5" x2="62" y2="47.5" stroke="white" stroke-width="3" stroke-linejoin="bevel"/>
-                    <line class="mouth" x1="37" y1="59.5" x2="49" y2="59.5" stroke="white" stroke-width="3" stroke-linejoin="bevel"/>
+                    <path class="mouthmorph" d="M37 60C38 60 40 60 43 60C46 60 48 60 49 60" stroke="white" stroke-width="3" stroke-linejoin="bevel"/>
+                    <!-- <line class="mouth" x1="37" y1="59.5" x2="49" y2="59.5" stroke="white" stroke-width="3" stroke-linejoin="bevel"/> -->
                     </g>
                     <defs>
                         <clipPath id="clip0">
