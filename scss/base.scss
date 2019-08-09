@@ -2,6 +2,7 @@ html {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    // background-color: red;
 }
 body {
     height: 100%;
@@ -9,7 +10,7 @@ body {
     flex-direction: column;
     font-family: $font-family;
     font-size: 16px;
-    // background:$light-black;
+    // background-color: $black;
     background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
     color: $white;
 

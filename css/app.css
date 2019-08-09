@@ -508,12 +508,12 @@ ul {
 .media-wrapper {
   display: flex;
   align-self: center;
-  border: 1px solid #3d3d3d;
   border-radius: 0.3rem;
   justify-content: space-around;
   padding: 2rem 0;
   margin-top: 3rem;
-  box-shadow: 2px 2px 12px #3d3d3d; }
+  box-shadow: 2px 2px 12px #3d3d3d;
+  background: rgba(0, 0, 0, 0.3); }
   @media screen and (max-width: 1200px) {
     .media-wrapper {
       width: 90%;
@@ -570,6 +570,7 @@ ul {
 #wrapper {
   width: 1200px;
   min-height: 400px;
+  height: auto;
   flex: 1 0 auto;
   margin: 0 auto; }
   @media screen and (max-width: 1200px) {

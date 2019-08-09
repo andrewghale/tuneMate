@@ -1,11 +1,11 @@
 #wrapper {
     width: 1200px;
     min-height: 400px;
+    height: auto;
     // background: $light-black;
-    // background: linear-gradient(45deg, #3d6b6b 0%,#898989 36%,#3d6b6b 61%,#898989 100%);
+    // background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
     flex: 1 0 auto;
     margin: 0 auto;
-    // border: 1px solid yellow;
     @media screen and (max-width: $bp-desktop) {
         width: 100%;
     }

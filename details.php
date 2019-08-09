@@ -37,6 +37,7 @@ include("inc/header.php"); ?>
         <h1><?php echo $item["title"]; ?></h1>
         <table>
             <tr>
+            <tr>
                 <th>Category</th>
                 <td><?php echo $item["category"]; ?></td>
             </tr>
@@ -94,3 +95,4 @@ include("inc/header.php"); ?>
         </div>
     </div>
 </div>
+
