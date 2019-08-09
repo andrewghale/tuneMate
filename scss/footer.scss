@@ -8,6 +8,14 @@
     max-width: 1200px;
     margin: 0 auto;
     color: $dark-white;
+    @media screen and (max-width: $bp-desktop) {
+        padding: 0 2rem;
+    }
+    @media screen and (max-width: $bp-tablet) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        height: fit-content;
+    }
     .lastmod {
         color: gray;
     }
@@ -21,6 +29,9 @@
                 height: 40px;
                 width: auto;
                 margin: 0 1rem;
+                @media screen and (max-width: $bp-tablet) {
+                    margin: 0 1rem 0 0;
+                }
             }
         }
     }

@@ -1,0 +1,23 @@
+// @mixin hamburger {
+//     span,
+//     span:before,
+//     span:after {
+//         display: block;
+//         background: $white;
+//         height: 2px;
+//         width: 20px;
+//         border-radius: $border-radius;
+//         position: relative;
+//     }
+//     span:before,
+//     span:after {
+//         content: '';
+//         position: absolute;
+//     }
+//     span:before {
+//         bottom: 7px;
+//     }
+//     span:after {
+//         top: 7px;
+//     }
+// }

@@ -7,36 +7,135 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 1rem 2rem;
+        // padding: 1rem 2rem;
+        @media screen and (max-width: $bp-tablet) {
+            justify-content: center;
+            height: 110px;
+            position: relative;
+        }
         a {
             height: 71px;
             align-self: center;
+            @media screen and (max-width: $bp-tablet) {
+                margin: 0 auto;
+            }
+            .logo {
+                // margin-right: 1rem;
+            }
         }
-        .nav {
-            display: flex;
-            align-items: center;
-            li {
+        h1 {
+            @media screen and (max-width: $bp-desktop) {
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: $bp-tablet) {
+                display: none;
+            }
+        }
+        .nav-toggle {
+            display: none;
+            @media screen and (min-width: $bp-tablet) {
+                display: none;
+            }
+            &:checked ~ nav {
                 display: flex;
-                margin: 0;
-                font-size: 1.1rem;
-                text-align: center;
-                list-style: none;
-                letter-spacing: 0.1rem;
-                &.on {
-                    a {
-                        background-color: $gray;
-                        border-radius: $border-radius;
+                ul {
+                    flex-direction: column;
+                    justify-content: center;
+                    li {
+                        // width: 100%;
+                        a {
+                            width: 100%;
+                        }
                     }
                 }
-                a {
-                    align-items: center;
-                    color: $dark-white;
-                    text-decoration: none;
-                    width: fit-content;
-                    height: fit-content;
-                    padding: 0.5rem 0.5rem;
-                    white-space: nowrap;
+            }
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        nav {
+            display: flex;
+            @media screen and (max-width: $bp-tablet) {
+                flex-direction: column;
+                display: none;
+                position: absolute;
+                text-align: center;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                background-color: $black;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    display: flex;
+                    margin: 0 1rem;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    list-style: none;
+                    letter-spacing: 0.1rem;
+                    @media screen and (max-width: $bp-desktop) {
+                        font-size: 1rem;
+                        margin: 0;
+                    }
+                    &.on {
+                        a {
+                            background-color: $gray;
+                            border-radius: $border-radius;
+                        }
+                    }
+                    a {
+                        align-items: center;
+                        color: $dark-white;
+                        text-decoration: none;
+                        width: fit-content;
+                        height: fit-content;
+                        padding: 0.5rem 0.5rem;
+                        white-space: nowrap;
+                    }
                 }
+            }
+        }
+        .nav-toggle-label {
+            position: absolute;
+            top: 33px;
+            left: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            height: 50px;
+            width: 50px;
+                &:hover {
+                    cursor: pointer;
+                }
+                @media screen and (min-width: $bp-tablet) {
+                    display: none;
+                }
+            span,
+            span:before,
+            span:after {
+                display: block;
+                background: $white;
+                height: 2px;
+                width: 20px;
+                border-radius: $border-radius;
+                position: relative;
+            }
+            span:before,
+            span:after {
+                content: '';
+                position: absolute;
+            }
+            span:before {
+                bottom: 7px;
+            }
+            span:after {
+                top: 7px;
             }
         }
     }

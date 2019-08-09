@@ -11,7 +11,7 @@
     <div class="header-wrapper">
         <div class="header">
             <a href="index.php">
-                <svg width="86" height="71" viewBox="0 0 86 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="logo" width="86" height="71" viewBox="0 0 86 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                     <path d="M0 55C0 63.8366 7.16344 71 16 71V39C7.16344 39 0 46.1634 0 55Z" fill="#4CC8C0"/>
                     <path d="M86 55C86 46.1634 78.8366 39 70 39V71C78.8366 71 86 63.8365 86 55Z" fill="#4CC8C0"/>
@@ -31,13 +31,20 @@
                 </svg>
             </a>
             <h1><a href="index.php">tuneMate</a></h1>
-            <ul class="nav">
-                <!-- the " on" class highlights current page section -->
-                <li class="books<?php if ($section == "books") { echo " on"; } ?>"><a href="catalog.php?cat=books">Books</a></li>
-                <li class="movies<?php if ($section == "movies") { echo " on"; } ?>"><a href="catalog.php?cat=movies">Movies</a></li>
-                <li class="music<?php if ($section == "music") { echo " on"; } ?>"><a href="catalog.php?cat=music">Music</a></li>
-                <li class="suggest<?php if ($section == "suggest") { echo " on"; } ?>"><a href="suggest.php">Suggest</a></li>
-                <li class="about<?php if ($section == "about") { echo " on"; } ?>"><a href="about.php">About</a></li>
-            </ul>
+            <input type="checkbox" class="nav-toggle" id="nav-toggle">
+            <nav>
+                <ul>
+                    <!-- the " on" class highlights current page section -->
+                    <li class="books<?php if ($section == "books") { echo " on"; } ?>"><a href="catalog.php?cat=books">Books</a></li>
+                    <li class="movies<?php if ($section == "movies") { echo " on"; } ?>"><a href="catalog.php?cat=movies">Movies</a></li>
+                    <li class="music<?php if ($section == "music") { echo " on"; } ?>"><a href="catalog.php?cat=music">Music</a></li>
+                    <li class="suggest<?php if ($section == "suggest") { echo " on"; } ?>"><a href="suggest.php">Suggest</a></li>
+                    <li class="about<?php if ($section == "about") { echo " on"; } ?>"><a href="about.php">About</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle">
+                <span>
+                </span>
+            </label>
         </div>
     </div>

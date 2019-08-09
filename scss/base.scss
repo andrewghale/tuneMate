@@ -9,14 +9,21 @@ body {
     flex-direction: column;
     font-family: $font-family;
     font-size: 16px;
-    background:$light-black;
-    color: #676767;
+    // background:$light-black;
+    background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
+    color: $white;
+
 }
 
 h1 {
     font-size: 3rem;
     color: $turquoise;
     letter-spacing: 0.2rem;
+}
+
+h2 {
+    color: $white;
+    margin-left: 2rem;
 }
 
 a {

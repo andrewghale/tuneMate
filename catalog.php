@@ -25,8 +25,8 @@ include("inc/header.php"); ?>
         <?php
         if ($section != null) {
             // Shows breadcrumbs starting from full catalog
-            echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
-        } echo $pageTitle;
+            echo "<span class='breadcrumbs'><a href='catalog.php'>Full Catalog</a> &gt; ";
+        } echo $pageTitle . "</span>";
         ?>
     </p>
     <ul class="items">

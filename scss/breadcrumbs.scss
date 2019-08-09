@@ -1,9 +1,14 @@
 .breadcrumbs {
-    font-size: 14px;
-    font-weight: normal;
-    padding: 14px 0 48px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    font-size: 1.4rem;
+    @media screen and (max-width: $bp-desktop) {
+        width: 100%;
+        margin-left: 1rem;
+    }
 }
 .breadcrumbs a {
     text-decoration: none;
-    color: #3888c2;
+    font-weight: bold;
+    color: $turquoise;
 }
