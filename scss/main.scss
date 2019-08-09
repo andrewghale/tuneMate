@@ -22,14 +22,14 @@
     width: fit-content;
     p {
         margin: 1rem 2rem;
+        line-height: 1.5rem;
     }
 }
 .items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // border: 1px solid yellow;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $bp-desktop) {
         width: 100%;
     }
     li {

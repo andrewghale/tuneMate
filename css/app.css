@@ -346,9 +346,11 @@ ul {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 1rem 2rem; }
     @media screen and (max-width: 770px) {
       .header-wrapper .header {
+        padding: 0;
         justify-content: center;
         height: 110px;
         position: relative; } }
@@ -392,7 +394,8 @@ ul {
           left: 0;
           width: 100%;
           z-index: 999;
-          background-color: black; } }
+          background-color: black;
+          box-shadow: 2px 2px 5px black; } }
       .header-wrapper .header nav ul {
         display: flex;
         align-items: center; }
@@ -491,8 +494,11 @@ ul {
   font-size: 1.4rem; }
   @media screen and (max-width: 1200px) {
     .breadcrumbs {
-      width: 100%;
       margin-left: 1rem; } }
+  @media screen and (max-width: 770px) {
+    .breadcrumbs {
+      margin: 2rem;
+      font-size: 1rem; } }
 
 .breadcrumbs a {
   text-decoration: none;
@@ -511,7 +517,7 @@ ul {
   @media screen and (max-width: 1200px) {
     .media-wrapper {
       width: 90%;
-      margin: 3rem auto 0 auto;
+      margin: 3rem auto;
       padding-left: 1rem; } }
   @media screen and (max-width: 770px) {
     .media-wrapper {
@@ -534,6 +540,9 @@ ul {
     border: 1px solid #3d3d3d;
     background: #3d3d3d;
     border-radius: 0.3rem; }
+    @media screen and (max-width: 770px) {
+      .media-wrapper .media-picture {
+        margin: 0 auto 2rem; } }
     .media-wrapper .media-picture span {
       background: #3d3d3d;
       display: block;
@@ -555,6 +564,8 @@ ul {
       font-size: 2rem;
       color: #dddddd;
       margin: 0 1rem 1rem 1rem; }
+    .media-wrapper .media-details table {
+      margin-top: 2rem; }
 
 #wrapper {
   width: 1200px;
@@ -575,7 +586,8 @@ ul {
   line-height: 1rem;
   width: fit-content; }
   .intro p {
-    margin: 1rem 2rem; }
+    margin: 1rem 2rem;
+    line-height: 1.5rem; }
 
 .items {
   display: flex;
