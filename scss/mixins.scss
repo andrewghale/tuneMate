@@ -21,3 +21,26 @@
 //         top: 7px;
 //     }
 // }
+
+@mixin bg-gradient {
+    background:
+        linear-gradient(
+        75deg,
+        #4c7099 0%,
+        #6ec5bf 100%);
+}
+@mixin bg-gradient-light {
+    background:
+        linear-gradient(
+        75deg,
+        #4c70997a 0%,
+        #6ec5bf7e 100%);
+}
+
+@mixin button-gradient {
+    background:
+    linear-gradient(
+    215deg,
+    rgb(207, 210, 255) 0%,
+    white 100%);
+}

@@ -223,7 +223,7 @@ $catalog[310] = [
     "artist" => "oOoOO"
 ];
 $catalog[310] = [
-    "title" => "Gold Panda",
+    "title" => "Lucky Shiner",
     "img" => "img/media/lucky_shiner.jpg",
     "genre" => "Electronic",
     "format" => "CD",

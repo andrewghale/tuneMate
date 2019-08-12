@@ -2,8 +2,6 @@
     width: 1200px;
     min-height: 400px;
     height: auto;
-    // background: $light-black;
-    // background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
     flex: 1 0 auto;
     margin: 0 auto;
     @media screen and (max-width: $bp-desktop) {
@@ -17,7 +15,7 @@
     border: 2px solid $turquoise;
     border-radius: $border-radius;
     font-size: 1.2rem;
-    background: $gray;
+    background: $trans-gray;
     line-height: 1rem;
     width: fit-content;
     p {
@@ -33,35 +31,33 @@
         width: 100%;
     }
     li {
-        background: $item-bg;
+        @include bg-gradient;
+        // background: $item-bg;
         display: flex;
         align-content: center;
         width: 212px;
         height: auto;
         min-height: 300px;
-        border: 1px solid $gray;
         position: relative;
         margin: 2rem 1.5rem;
         border-radius: $border-radius;
         transition: transform 0.2s;
         &:hover {
             transition: all 0.2s;
-            transform: scale(1.02);
-            box-shadow: 2px 2px 10px rgba(100, 100, 100, 1);
+            transform: scale(1.00);
+            box-shadow: 2px 2px 10px rgba(101, 236, 236, 0.1);
         }
         &:active {
             transition: transform 0s;
             transform: translateY(2px) scale(1.01);;
         }
-        a {
-            display: block;
+        a.item {
+            display: flex;
+            flex-direction: column;
             padding: 1rem;
             text-decoration: none;
             color: $white;
-            &:hover {
-                opacity: 1;
-                color: $turquoise;
-            }
+            opacity: 1;
             &:after {
                 content: '+';
                 opacity: 0;
@@ -91,6 +87,42 @@
                 width: 180px;
                 height: auto;
                 border-radius: $border-radius;
+            }
+            button {
+                @include button-gradient;
+                // display: flex;
+                // justify-content: space-between;
+                border-radius: $border-radius;
+                border: none;
+                margin-top: auto;
+                &:hover span {
+                    padding-right: 25px;
+                    &:after {
+                        opacity: 1;
+                        right: 0;
+                        padding-left: 0.5rem;
+                    }
+                }
+                span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                    &:after {
+                        content: '>';
+                        line-height: 1.2rem;
+                        font-size: 1.2rem;
+                        padding: 0;
+                        position: absolute;
+                        opacity: 0;
+                        top: 0px;
+                        left: 68px;
+                        transition: 0.5s;
+                    }
+                }
+                &:hover {
+                    // content: "View Details >>>"
+                }
             }
         }
     }

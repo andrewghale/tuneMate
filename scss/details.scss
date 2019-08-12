@@ -1,13 +1,12 @@
 .media-wrapper {
+    @include bg-gradient-light;
     display: flex;
     align-self: center;
-    // border: 1px solid $gray;
     border-radius: $border-radius;
     justify-content: space-around;
     padding: 2rem 0;
     margin-top: 3rem;
     box-shadow: 2px 2px 12px $gray;
-    background: rgba(0, 0, 0, 0.3);
     @media screen and (max-width: $bp-desktop) {
         width: 90%;
         margin: 3rem auto;
@@ -21,8 +20,8 @@
         margin: 0 1rem;
     }
     th, td {
-        background-color: $gray;
-        border: 1px solid $gray;
+        background-color: $trans-gray;
+        border: 1px solid $trans-gray;
     }
     th {
         width: 100px;
@@ -35,14 +34,12 @@
     }
     .media-picture {
         text-align: center;
-        border: 1px solid $gray;
-        background: $gray;
         border-radius: $border-radius;
         @media screen and (max-width: $bp-tablet) {
             margin: 0 auto 2rem;
         }
         span {
-            background: $gray;
+            background: $trans-gray-light;
             display: block;
             width: fit-content;
             padding: 1rem;

@@ -314,7 +314,7 @@ body {
   flex-direction: column;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
-  background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
+  background: linear-gradient(0.25turn, #947f60, #639ba5);
   color: white; }
 
 h1 {
@@ -338,9 +338,14 @@ a {
 ul {
   padding-inline-start: 0px; }
 
+button {
+  padding: 0.8rem; }
+  button:hover {
+    cursor: pointer; }
+
 .header-wrapper {
   width: 100%;
-  background: black;
+  background: rgba(160, 150, 121, 0.3);
   height: fit-content; }
   .header-wrapper .header {
     max-width: 1200px;
@@ -411,8 +416,8 @@ ul {
               font-size: 1rem;
               margin: 0; } }
           .header-wrapper .header nav ul li.on a {
-            background-color: #3d3d3d;
-            border-radius: 0.3rem; }
+            background-color: rgba(61, 61, 61, 0.4);
+            border-radius: 0.5rem; }
           .header-wrapper .header nav ul li a {
             align-items: center;
             color: #dddddd;
@@ -443,7 +448,7 @@ ul {
         background: white;
         height: 2px;
         width: 20px;
-        border-radius: 0.3rem;
+        border-radius: 0.5rem;
         position: relative; }
       .header-wrapper .header .nav-toggle-label span:before,
       .header-wrapper .header .nav-toggle-label span:after {
@@ -459,7 +464,6 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
-  background: black;
   height: 100px;
   max-width: 1200px;
   margin: 0 auto;
@@ -473,7 +477,7 @@ ul {
       align-items: flex-start;
       height: fit-content; } }
   .footer .lastmod {
-    color: gray; }
+    color: white; }
   .footer a {
     font-size: 1.4rem;
     color: white; }
@@ -506,14 +510,14 @@ ul {
   color: #6ec5bf; }
 
 .media-wrapper {
+  background: linear-gradient(75deg, #4c70997a 0%, #6ec5bf7e 100%);
   display: flex;
   align-self: center;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   justify-content: space-around;
   padding: 2rem 0;
   margin-top: 3rem;
-  box-shadow: 2px 2px 12px #3d3d3d;
-  background: rgba(0, 0, 0, 0.3); }
+  box-shadow: 2px 2px 12px #3d3d3d; }
   @media screen and (max-width: 1200px) {
     .media-wrapper {
       width: 90%;
@@ -526,32 +530,30 @@ ul {
     color: #dddddd;
     margin: 0 1rem; }
   .media-wrapper th, .media-wrapper td {
-    background-color: #3d3d3d;
-    border: 1px solid #3d3d3d; }
+    background-color: rgba(61, 61, 61, 0.4);
+    border: 1px solid rgba(61, 61, 61, 0.4); }
   .media-wrapper th {
     width: 100px;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem; }
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem; }
   .media-wrapper td {
-    border-bottom-right-radius: 1.2rem;
-    border-top-right-radius: 1.2rem; }
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem; }
   .media-wrapper .media-picture {
     text-align: center;
-    border: 1px solid #3d3d3d;
-    background: #3d3d3d;
-    border-radius: 0.3rem; }
+    border-radius: 0.5rem; }
     @media screen and (max-width: 770px) {
       .media-wrapper .media-picture {
         margin: 0 auto 2rem; } }
     .media-wrapper .media-picture span {
-      background: #3d3d3d;
+      background: rgba(61, 61, 61, 0.2);
       display: block;
       width: fit-content;
       padding: 1rem;
-      border-radius: 0.3rem; }
+      border-radius: 0.5rem; }
     .media-wrapper .media-picture img {
       width: 292px;
-      border-radius: 0.3rem; }
+      border-radius: 0.5rem; }
   .media-wrapper .media-details {
     width: 460px;
     display: flex;
@@ -581,9 +583,9 @@ ul {
   color: white;
   margin: 1rem;
   border: 2px solid #6ec5bf;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   font-size: 1.2rem;
-  background: #3d3d3d;
+  background: rgba(61, 61, 61, 0.4);
   line-height: 1rem;
   width: fit-content; }
   .intro p {
@@ -598,33 +600,31 @@ ul {
     .items {
       width: 100%; } }
   .items li {
-    background: #3d3d3d;
+    background: linear-gradient(75deg, #4c7099 0%, #6ec5bf 100%);
     display: flex;
     align-content: center;
     width: 212px;
     height: auto;
     min-height: 300px;
-    border: 1px solid #3d3d3d;
     position: relative;
     margin: 2rem 1.5rem;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     transition: transform 0.2s; }
     .items li:hover {
       transition: all 0.2s;
-      transform: scale(1.02);
-      box-shadow: 2px 2px 10px #646464; }
+      transform: scale(1);
+      box-shadow: 2px 2px 10px rgba(101, 236, 236, 0.1); }
     .items li:active {
       transition: transform 0s;
       transform: translateY(2px) scale(1.01); }
-    .items li a {
-      display: block;
+    .items li a.item {
+      display: flex;
+      flex-direction: column;
       padding: 1rem;
       text-decoration: none;
-      color: white; }
-      .items li a:hover {
-        opacity: 1;
-        color: #6ec5bf; }
-      .items li a:after {
+      color: white;
+      opacity: 1; }
+      .items li a.item:after {
         content: '+';
         opacity: 0;
         transition: opacity 0.2s;
@@ -633,7 +633,7 @@ ul {
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 0.3rem;
+        border-radius: 0.5rem;
         font-size: 3rem;
         position: absolute;
         height: 28px;
@@ -642,15 +642,41 @@ ul {
         right: 22px;
         color: #6ec5bf;
         text-shadow: 2px 2px 15px #6ec5bf; }
-      .items li a:hover:after {
+      .items li a.item:hover:after {
         content: '+';
         transition: opacity 0.1s;
         opacity: 1; }
-      .items li a img {
+      .items li a.item img {
         max-width: 180px;
         width: 180px;
         height: auto;
-        border-radius: 0.3rem; }
+        border-radius: 0.5rem; }
+      .items li a.item button {
+        background: linear-gradient(215deg, #cfd2ff 0%, white 100%);
+        border-radius: 0.5rem;
+        border: none;
+        margin-top: auto; }
+        .items li a.item button:hover span {
+          padding-right: 25px; }
+          .items li a.item button:hover span:after {
+            opacity: 1;
+            right: 0;
+            padding-left: 0.5rem; }
+        .items li a.item button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s; }
+          .items li a.item button span:after {
+            content: '>';
+            line-height: 1.2rem;
+            font-size: 1.2rem;
+            padding: 0;
+            position: absolute;
+            opacity: 0;
+            top: 0px;
+            left: 68px;
+            transition: 0.5s; }
 
 .media-details form {
   margin-left: 0; }

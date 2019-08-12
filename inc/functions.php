@@ -11,7 +11,10 @@ function get_item_html($id,$item) {
     . "' alt='"
     . $item['title']
     . "' />"
-    . "<p>View Details</p>"
+    . "<h3>"
+    . $item['title']
+    . "</h3>"
+    . "<button><span>Details </span></button>"
     . "</a></li>";
     return $output;
 }

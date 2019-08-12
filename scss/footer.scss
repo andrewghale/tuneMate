@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    background: $black;
+    // background: $trans-black;
     height: 100px;
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +17,7 @@
         height: fit-content;
     }
     .lastmod {
-        color: gray;
+        color: $white;
     }
     a {
         font-size: 1.4rem;

@@ -11,7 +11,7 @@ body {
     font-family: $font-family;
     font-size: 16px;
     // background-color: $black;
-    background: linear-gradient(0.25turn, #3d6b6b, #898989, #3d6b6b);
+    background: linear-gradient(0.25turn, #947f60, #639ba5);
     color: $white;
 
 }
@@ -42,4 +42,11 @@ a {
 
 ul {
     padding-inline-start: 0px;
+}
+
+button {
+    padding: 0.8rem;
+    &:hover {
+        cursor: pointer;
+    }
 }

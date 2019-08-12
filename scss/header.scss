@@ -1,6 +1,6 @@
 .header-wrapper {
     width: 100%;
-    background: $black;
+    background: $trans-black;
     height: fit-content;
     .header {
         max-width: 1200px;
@@ -86,7 +86,7 @@
                     }
                     &.on {
                         a {
-                            background-color: $gray;
+                            background-color: $trans-gray;
                             border-radius: $border-radius;
                         }
                     }
