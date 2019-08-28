@@ -11,7 +11,7 @@
     <div class="header-wrapper">
         <div class="header">
             <a href="index.php">
-                <svg class="logo" width="86" height="71" viewBox="0 0 86 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="logo" class="logo" width="86" height="71" viewBox="0 0 86 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                     <path d="M0 55C0 63.8366 7.16344 71 16 71V39C7.16344 39 0 46.1634 0 55Z" fill="#4CC8C0"/>
                     <path d="M86 55C86 46.1634 78.8366 39 70 39V71C78.8366 71 86 63.8365 86 55Z" fill="#4CC8C0"/>

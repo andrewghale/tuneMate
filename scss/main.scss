@@ -223,3 +223,27 @@ form input[type="submit"]:hover {
     font-style: italic;
     font-weight: bold;
 }
+.svg-wrapper {
+    display: flex;
+    .svg-stuff {
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        padding: 1rem;
+    }
+}
+
+.firefox-text {
+    background-color: white;
+}
+
+.writing {
+    width: 86%;
+    margin-left: -2rem;
+}
+
+.bmw {
+    justify-content: center;
+}

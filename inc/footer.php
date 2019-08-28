@@ -28,30 +28,6 @@
         </div>
     </div>
     <script src="js/anime.min.js"></script>
-    <script>
-    let shapes = [
-        {
-            d: "M37 60C38 60 40 60 43 60C46 60 48 60 49 60"
-        },
-        {
-            d: "M37 60C38 61 40 62 43 62C46 62 48 61 49 60"
-        }
-    ]
-    anime({
-        targets: '.mouthmorph',
-        d: [
-            {value: shapes[0].d},
-            {value: shapes[1].d}
-        ],
-        direction: 'alternate',
-        autoplay: true,
-        delay: 1500,
-        endDelay: 1000,
-        easing: 'easeInOutQuad',
-        duration: 2000,
-        loop: true
-    });
-    </script>
     <script src="js/app.js"></script>
 </body>
 </html>
